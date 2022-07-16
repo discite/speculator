@@ -42,4 +42,4 @@ jobs:
           python speculator.py
       - uses: EndBug/add-and-commit@v9
         with:
-          default_author: github_actions
+          github_token: ${{ secrets.GITHUB_TOKEN }}
