@@ -2,7 +2,7 @@ import yaml
 from urllib import request
 import json
 
-results = []
+results = {}
 
 
 def versionYaml(task):
@@ -25,7 +25,7 @@ with open("speculator.yaml", "r") as file:
     data = yaml.load(file, Loader=yaml.FullLoader)
     list(
         map(
-            lambda result: results.append(result),
+            lambda result: results.update(result),
             map(
                 versionYaml,
                 filter(lambda task: task["schemaType"] == "yaml", data),
