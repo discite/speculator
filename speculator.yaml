@@ -1,6 +1,6 @@
 - label: "alpine-base-image"
   schemaType: "yaml"
-  sourceVersion: "https://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/x86_64/latest-releases.yaml"
+  sourceVersion: "https://dl-cdn.alpinelinux.org/alpine/edge/releases/x86_64/latest-releases.yaml"
   lookup:
     key: "flavor"
     value: "alpine-minirootfs"
