@@ -3,12 +3,12 @@
 
 name: Run Speculator at the end of the day
 
-# on:
-#   schedule:
-#     - cron: "0 0 * * *"
 on:
-  push:
-    branches: ["main"]
+  schedule:
+    - cron: "0 0 * * *"
+# on:
+#   push:
+#     branches: ["main"]
 
 permissions:
   contents: read
